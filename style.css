@@ -1,0 +1,313 @@
+/*### Defaults ###*/
+nav,
+header,
+footer {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	margin: 0;
+}
+
+label {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 25px;
+	line-height: 1.2;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+article p {
+	font-size: 30px;
+	padding: 20px;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.column-1 {
+	width: 8.33%;
+}
+.column-2 {
+	width: 16.66%;
+}
+.column-3 {
+	width: 25%;
+}
+.column-4 {
+	width: 33.33%;
+}
+.column-5 {
+	width: 41.66%;
+}
+.column-6 {
+	width: 50%;
+}
+.column-7 {
+	width: 58.33%;
+}
+.column-8 {
+	width: 66.66%;
+}
+.column-9 {
+	width: 75%;
+}
+.column-10 {
+	width: 83.33%;
+}
+.column-11 {
+	width: 91.66%;
+}
+.column-12 {
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*### Custom Styles ###*/
+
+#section-1-gradient {
+	background: -webkit-linear-gradient(#076dff, #65a5ff);
+	background: -o-linear-gradient(#076dff, #65a5ff);
+	background: -moz-linear-gradient(#076dff, #65a5ff);
+	background: linear-gradient(#076dff, #65a5ff);
+}
+
+div.box {
+	background-color: #fff;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
+	text-align: center;
+	margin: 24px;
+	padding: 36px 24px 40px 24px;
+	border-radius: 8px;
+}
+
+button {
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #0069ff;
+	padding: 15px 60px;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	margin: 5px;
+}
+
+button.contact {
+	display: block;
+	margin: auto;
+}
+
+div.icon {
+	width: 100%;
+}
+
+div.skyImg img {
+	display: block;
+	margin: auto;
+	box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+
+div.leftSide-column {
+	margin-left: 25%;
+}
+
+div.rightSide-column {
+	margin-left: 25%;
+}
+
+h1.large {
+	color: white;
+	font-size: 50px;
+	margin: 0;
+	line-height: 75px;
+}
+
+h1.section2Header {
+	font-size: 65px;
+	text-align: center;
+}
+
+form h2 {
+	color: white;
+}
+
+input[type="text"] {
+	font-size: 15px;
+	width: 400px;
+	min-width: 100px;
+	padding: 5px;
+	border-radius: 7px;
+}
+
+/*### Nav Bar ###*/
+nav {
+	width: 100%;
+	margin: 0;
+}
+
+nav ul {
+	background-color: #eee;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+ul.topnav li {
+	list-style: none;
+	float: left;
+}
+
+ul.topnav li.topnav-right {
+	float: right;
+}
+
+ul.topnav li a {
+	display: block;
+	text-decoration: none;
+	min-height: 16px;
+	text-align: center;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+ul.topnav li a:hover {
+	background-color: #0080ff;
+	color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+	display: none;
+}
+
+footer.homeFooter {
+	background-color: #666;
+	padding-left: 12%;
+}
+
+footer.homeFooter h1 {
+	color: #fff;
+	font-size: 35px;
+}
+
+footer.homeFooter ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 0;
+}
+
+footer.homeFooter ul li {
+	color: #eee;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+/*### Mobile ###*/
+
+@media screen and (max-width: 680px) {
+	ul.topnav li:not(:nth-child(1)) {
+		display: none;
+	}
+
+	ul.topnav li.dropdownIcon {
+		display: block;
+		float: right;
+	}
+
+	ul.topnav.responsive li.dropdownIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	ul.topnav.responsive {
+		position: relative;
+	}
+
+	ul.topnav.responsive li {
+		display: inline;
+		float: none;
+	}
+
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+
+	h1.section2Header {
+		font-size: 45px;
+	}
+
+	article p {
+		font-size: 20px;
+	}
+
+	.column-4,
+	.column-5,
+	.column-6,
+	.column-7 {
+		width: 100%;
+		margin: 0;
+	}
+
+	div.mobileStack {
+		width: 50%;
+		display: block;
+	}
+
+	div.box {
+		display: block;
+		padding: 5px;
+	}
+
+	div.skyImg {
+		margin: 10px;
+	}
+
+	div.skyImg img {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	div.leftSide-column,
+	div.rightSide-column {
+		margin: 15px;
+	}
+
+	input[type="text"] {
+		width: 300px;
+	}
+
+	.vid-Container iframe {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+}
